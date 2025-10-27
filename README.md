@@ -1,19 +1,40 @@
 # CV Project 
 - project for The Odin Project to learn React and State
 
-# React + Vite
+### Component View
+App
+│
+├── Header
+│
+├── CVForm
+│   │
+│   ├── GeneralInfo [X]
+│   │   ├── InputField (name)
+│   │   ├── InputField (email)
+│   │   └── InputField (phone)
+│   │
+│   ├── EducationExperience
+│   │   ├── EducationItem (repeated for each school)
+│   │   │   ├── InputField (schoolName)
+│   │   │   ├── InputField (studyTitle)
+│   │   │   └── InputField (studyDate)
+│   │   └── AddEducationButton
+│   │
+│   ├── PracticalExperience
+│   │   ├── ExperienceItem (repeated for each job)
+│   │   │   ├── InputField (companyName)
+│   │   │   ├── InputField (positionTitle)
+│   │   │   ├── TextArea (mainResponsibilities)
+│   │   │   ├── InputField (dateFrom)
+│   │   │   └── InputField (dateUntil)
+│   │   └── AddExperienceButton
+│   │
+│   └── SubmitButton
+│
+└── CVPreview
+    ├── GeneralInfoDisplay
+    ├── EducationDisplay
+    │   └── EducationItemDisplay (for each school)
+    └── ExperienceDisplay
+        └── ExperienceItemDisplay (for each job)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
