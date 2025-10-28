@@ -1,6 +1,5 @@
 # CV Project 
 - project for The Odin Project to learn React and State
 
-todo:
-- [ ] Finish all input components
-- [ ] learn how to submit a form, and only then will it render inputs into page.
+- completed functionality
+- features to add: component to js, actual css styling etc
