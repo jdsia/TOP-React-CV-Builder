@@ -3,6 +3,7 @@ import './App.css'
 import  GeneralInfo from './components/GeneralInfo.jsx'
 import  EducationalExperience from './components/EducationalExperience.jsx'
 import PracticalExperience from './components/PracticalExperience.jsx'
+import RenderedCV from './components/RenderedCV.jsx'
 
 
 function App() {
@@ -72,26 +73,12 @@ function App() {
     )
   } else {
     return (
-    <>
-      <h1>{generalInfo.name}'s CV</h1>
-      <div>
-        <p><strong>Name:</strong> {generalInfo.name}</p>
-        <p><strong>Email:</strong> {generalInfo.email}</p>
-        <p><strong>Phone:</strong> {generalInfo.phone}</p>
-      </div>
-      <div>
-        <p><strong>School:</strong> {educationalExperience.schoolName}</p>
-        <p><strong>Title of Study:</strong> {educationalExperience.titleStudy}</p>
-        <p><strong>date of Study:</strong> {educationalExperience.dateStudy}</p>
-      </div>
-      <div>
-        <p><strong>Company Name:</strong> {practicalExperience.companyName}</p>
-        <p><strong>Title of Position:</strong> {practicalExperience.positionTitle}</p>
-        <p><strong>Main Responsibilities:</strong> {practicalExperience.jobResponsibilities}</p>
-        <p><strong>Date When Worked:</strong> {practicalExperience.dateWhenWorked}</p>
-      </div>
-      <button onClick={()=>setisRendered(false)}>Edit</button>
-    </>
+      <RenderedCV 
+        generalInfo={generalInfo}
+        educationalExperience={educationalExperience}
+        practicalExperience={practicalExperience}
+        onEdit={() => setisRendered(false)}
+        />
     )
   }
 }
