@@ -10,19 +10,19 @@ function PracticalExperience({practicalExperience, setPracticalExperience}) {
   return (
     <div>
       <div>
-        name of school:
+        Company Name:
       </div>
       <input  name="companyName" value={practicalExperience.companyName} onChange={handleChange}/>
       <div>
-        name of school:
+        Title of Position:
       </div>
       <input  name="positionTitle" value={practicalExperience.positionTitle} onChange={handleChange}/>
       <div>
-        name of school:
+        Main Responsibilities:
       </div>
       <input  name="jobResponsibilities" value={practicalExperience.jobResponsibilities} onChange={handleChange}/>
       <div>
-        name of school:
+        Date When Worked:
       </div>
       <input  name="dateWhenWorked" value={practicalExperience.dateWhenWorked} onChange={handleChange}/>
     </div>

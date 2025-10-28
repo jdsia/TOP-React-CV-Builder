@@ -10,6 +10,7 @@ function GeneralInfo({generalInfo, setGeneralInfo, handleGeneralSubmit}) {
 
   }
 
+  // preview feature rather
   function handleSubmit(e) {
     e.preventDefault();
     handleGeneralSubmit();
@@ -36,7 +37,7 @@ function GeneralInfo({generalInfo, setGeneralInfo, handleGeneralSubmit}) {
         </div>
         <input  name="phone" type="tel" value={generalInfo.phone} onChange={handleChange}/>
         <div>
-        <button type="submit">submit</button>
+        <button type="submit">Preview</button>
         </div>
       </form>
     )
